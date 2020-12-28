@@ -6,11 +6,13 @@
   "license": "MIT",
   "scripts": {
     "dev": "nuxt",
-    "build" :"nuxt build",
+    "build": "nuxt build",
     "generate": "nuxt generate",
     "start": "nuxt start"
   },
   "dependencies": {
+    "@nuxtjs/snipcart": "^1.1.0",
+    "@nuxtjs/strapi": "^0.1.9",
     "nuxt": "^2.14.12"
   }
 }
