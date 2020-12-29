@@ -11,6 +11,10 @@ export default {
       }
     }
   },
+  env: {
+    assetsUrl: process.env.ASSETS_URL,
+    apiUrl: process.env.STRAPI_API
+  },
   modules: [
     '@nuxtjs/snipcart',
     '@nuxtjs/apollo'

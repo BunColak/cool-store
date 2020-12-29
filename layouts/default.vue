@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="flex flex-col">
     <Navbar />
-    <Sidebar />
-    <Nuxt />
+    <div class="flex">
+      <Sidebar />
+      <Nuxt />
+    </div>
   </div>
 </template>

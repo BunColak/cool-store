@@ -1,13 +1,17 @@
 module.exports = {
-  purge: [
-    "src/**/*.vue"
-  ],
+  purge: ["src/**/*.vue"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ["Raleway", "serif"],
+      primary: ["Raleway", "serif"],
+      secondary: ['"Playfair Display"', "serif"],
+    },
+    extend: {
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};

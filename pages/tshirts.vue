@@ -1,12 +1,13 @@
 <template>
-  <div>
+  <div class="grid grid-cols-4 gap-8">
     <div v-for="tshirt in tshirts" :key="tshirt.id">
-      <h4>{{ tshirt.name }}</h4>
-      <p>{{ tshirt.description }}</p>
-      <h5>{{tshirt.price}}€</h5>
-      <button class="snipcart-add-item" v-bind="$snipcart.bindProduct(tshirt)" :data-item-image="`http://localhost:1337${tshirt.images[0].formats.small.url}`">
-        Add to cart
-      </button>
+      <item
+        :name="tshirt.name"
+        :price="tshirt.price"
+        :image="tshirt.images[0].formats.small.url"
+        :id="tshirt.id"
+        type="tshirt"
+      />
     </div>
   </div>
 </template>

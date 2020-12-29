@@ -1,0 +1,1 @@
+export const generateImageLink = (path) => process.env.assetsUrl + path
