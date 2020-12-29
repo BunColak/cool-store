@@ -11,8 +11,14 @@
     "start": "nuxt start"
   },
   "dependencies": {
+    "@nuxtjs/apollo": "^4.0.1-rc.5",
     "@nuxtjs/snipcart": "^1.1.0",
     "@nuxtjs/strapi": "^0.1.9",
-    "nuxt": "^2.14.12"
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9",
+    "graphql-tag": "^2.11.0",
+    "nuxt": "^2.14.12",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }

@@ -1,20 +1,16 @@
 <template>
+  <div>
     <div>
-        <div v-for="tshirt in tshirts" :key="tshirt.id">
-            <h4>{{tshirt.name}}</h4>
-            <h5>hello</h5>
-            <button class="snipcart-add-item" v-bind="$snipcart.bindProduct(tshirt)">Add to cart</button>
-        </div>
+        Welcome to my cool shop
     </div>
+  </div>
 </template>
 
 <script>
+import Navbar from '../components/Navbar.vue';
+
 export default {
-    name: 'IndexPage',
-    async asyncData({ params, $strapi }) {
-      const tshirts = await $strapi.find('tshirts')
-      console.log(tshirts[0].images);
-      return {tshirts}
-    }
-}
+  components: { Navbar },
+  name: "IndexPage"
+};
 </script>
