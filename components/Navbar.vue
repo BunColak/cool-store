@@ -1,9 +1,17 @@
 <template>
   <nav class="flex p-4 justify-between">
-    <div>
+    <div class="flex items-center">
       <nuxt-link to="/" class="block h-16">
         <img class="h-full" src="~/assets/images/logo.png" alt="Logo" />
       </nuxt-link>
+      <div class="lg:hidden ml-2">
+        <nuxt-link class="font-secondary" to="/tshirts" active-class="font-bold"
+          >Tshirts</nuxt-link
+        >
+        <nuxt-link class="font-secondary" to="/jeans" active-class="font-bold"
+          >Jeans</nuxt-link
+        >
+      </div>
     </div>
     <div>
       <button class="snipcart-checkout flex items-center relative">
