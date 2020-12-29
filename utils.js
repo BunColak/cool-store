@@ -1,1 +1,1 @@
-export const generateImageLink = (path) => process.env.assetsUrl + path
+export const generateImageLink = (path) => process.env.NODE_ENV === "production" ? path : process.env.assetsUrl + path
