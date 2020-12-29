@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 px-4">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 px-4 w-full">
     <div v-for="tshirt in tshirts" :key="tshirt.id">
       <item
         :name="tshirt.name"

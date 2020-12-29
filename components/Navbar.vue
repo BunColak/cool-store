@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex p-4 justify-between">
+  <nav class="flex p-4 justify-between items-center">
     <div class="flex items-center">
       <nuxt-link to="/" class="block h-16">
         <img class="h-full" src="~/assets/images/logo.png" alt="Logo" />
