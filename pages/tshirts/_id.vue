@@ -1,13 +1,13 @@
 <template>
-  <div class="flex flex-col p-4 w-full">
-    <div class="w-2/3 h-auto mx-auto">
+  <div class="flex flex-col p-4 w-full lg:flex-row">
+    <div class="w-2/3 h-auto mx-auto lg:mx-0 lg:w-1/3">
       <img class="h-full" :src="imageUrl" :alt="tshirt.name" />
     </div>
-    <div class="mt-4 text-center">
+    <div class="mt-4 text-center lg:mt-0 lg:ml-24">
       <h2 class="font-secondary text-3xl">{{ tshirt.name }}</h2>
-      <p class="mt-2">{{ tshirt.description }}</p>
+      <p class="mt-2 lg:mt-8">{{ tshirt.description }}</p>
       <p class="font-secondary mt-2 text-lg">{{ tshirt.price }}€</p>
-      <p class="font-secondary mt-2 text-lg text-red-600" v-if="stockInfo">
+      <p class="font-secondary mt-2 text-lg text-red-600 lg:mt-16" v-if="stockInfo">
         {{ stockInfo }}
       </p>
       <button
