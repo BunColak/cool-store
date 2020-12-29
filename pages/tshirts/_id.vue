@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col p-4 w-full lg:flex-row">
-    <div class="w-2/3 h-auto mx-auto lg:mx-0 lg:w-1/3">
-      <img class="h-full" :src="imageUrl" :alt="tshirt.name" />
+  <div v-if="tshirt" class="flex flex-col p-4 w-full lg:flex-row">
+    <div class="w-2/3 mx-auto lg:mx-0 lg:w-1/3">
+      <img class="w-full" :src="imageUrl" :alt="tshirt.name" />
     </div>
     <div class="mt-4 text-center lg:mt-0 lg:ml-24">
       <h2 class="font-secondary text-3xl">{{ tshirt.name }}</h2>

@@ -6,7 +6,7 @@
         :price="tshirt.price"
         :image="tshirt.images[0].formats.small.url"
         :id="tshirt.id"
-        type="tshirt"
+        type="tshirts"
       />
     </div>
   </div>
